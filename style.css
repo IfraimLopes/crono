@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       font-family: "Lato", sans-serif;
+}
+
+body{
+    background-color: orange;
+    color:  white;
+}
+
+& .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 60px;
+
+    & h1{
+        font-size: 60px;
+    }
+
+    & p{
+        font-size: 30px;
+    }
+
+
+    & input{
+        margin: 20px 30px;
+        height: 40px;
+        width: 190px;
+        border: none;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+     & input:hover{
+        background-color: rgb(244, 244, 244);
+        color: black;
+    }
+
+   }    
+
+   @media (width < 700px) {
+
+    h1{
+        font-size: 10px;
+    }
+
+
+    #botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+   }
